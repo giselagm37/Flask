@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="./src/css/carrito.css">
+    <link rel="stylesheet" href="./src/css/card.css">
+    
+    <script src="./src/js/item.js" defer></script>
+    <script src="./src/js/card.js" defer></script>
+    <script src="./src/js/cartService.js" defer></script>
+    <title>Productos </title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="./carrito.html"><img src="" id="logo" alt=""></a>
+            <div>
+                <a href="./carrito.html">Fashion</a>
+                <a href="./carrito.html">Ruta</a>
+                <a href="./card.html" id="carro"><img src="./src/img/carrito.png" alt="Carrito de compras"><span id="cuenta-carrito">0</span></a>
+            </div>
+        
+        </nav>
+    </header>
+    <main>
+        <p id="Carrito-vacio">No tienes productos en el carrito <a href="carrito.html"></a>Ir al carrito</p>
+        <section id="productos-container"></section>
+        <section id="totales">
+            <p>Total unidades: <span id="unidades">0</span></p>
+            <p>Total precio: $ <span id="precio">0</span></p>
+            <button disabled>Comprar</button>
+            <button id="reiniciar">Reiniciar Carrito</button>
+        </section>
+    </main>
+    <footer>
+        <p></p>
+    </footer>
+</body>
+</html>

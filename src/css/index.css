@@ -1,0 +1,25 @@
+/*card*/
+#productos-container{
+    display:flex;
+    flex-wrap: wrap;
+    gap: 20px; /*espacio entre medio*/
+    max-width: 900px;
+    margin:auto;
+}
+.tarjetas-producto{
+    max-width:400px;
+    text-align: center;
+    background-color: rgb(189, 173, 204);
+    padding: 10px;
+    box-shadow: 0 0 5px rgb(0,0,0,0.1);
+    transition: 200ms;  /*tiempo para el translate*/
+}
+.tarjetas-producto{
+    translate: 0 -10px;                       /*sube la imagen*/
+    box-shadow: 0 10 5px rgb(0,0,0,0.1); /*baja el sombreado*/
+}
+
+.tarjeta-producto img{
+    width:100%;
+    aspect-ratio:1.5; /*para que todas tengan el mismo tamaño*/
+}

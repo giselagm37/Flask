@@ -1,0 +1,66 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;/* una abajo de la otra*/
+    height: 100vh;/*valor vertical*/
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover:not(#carro){  /*no al numero*/
+    color:blueviolet;  
+}
+header{
+    box-shadow: 0 3px 5px rgba(0,0,0,0.104);/*sombreado*/
+    padding: 10px 0; /*solo vertical*/
+}
+header nav{  /* una al lado del otro */
+    display:flex;
+    justify-content: space-between; /*queda una parte de cada lado*/
+    margin: 0 60px;
+}
+header nav div{
+    display: flex;
+    align-items: center;/*centra verticalmente*/
+    gap:30px; /*separacion*/
+    position: relative;
+}
+#cuenta-carrito{
+    background-color: blueviolet;
+    border-radius: 100%; /*redondeado*/
+    display: inline-block;
+    width: 20px;
+    line-height: 20px; /* alinear la altura*/
+    aspect-ratio: 1; /*redondeado*/
+    text-align: center;
+    position: absolute;
+}
+#logo
+header nav img{ /**/
+    height: 25px;
+
+}
+
+h3,p{
+    margin:6px 0;
+}
+button{
+    background-color: blueviolet;
+    color: white;
+    padding: 5px 10px; /*texto del contorno*/
+    border: unset; /**/
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer{
+    margin-top:auto;
+    box-shadow: 0 -3px 5px rgba(0,0,0,0.104);/* en neg para que vaya para arriba*/
+    text-align: center;
+}
+.escondido{
+    display: none
+}
