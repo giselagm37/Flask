@@ -15,7 +15,7 @@
 <body>
     <header>
         <nav>
-            <a href="./carrito.html"><img src="" id="logo" alt=""></a>
+            <a href="./src/img/logo.png"><img src="" id="logo" alt=""></a>
             <div>
                 <a href="./carrito.html">Fashion</a>
                 <a href="./carrito.html">Ruta</a>
@@ -25,14 +25,23 @@
         </nav>
     </header>
     <main>
-        <p id="Carrito-vacio">No tienes productos en el carrito <a href="carrito.html"></a>Ir al carrito</p>
-        <section id="productos-container"></section>
+        <p id="carrito-vacio">No tienes productos en el carrito <a href="carrito.html"></a>Ir al carrito</p>
+        
+        <div id="productos-container"></div>
+        <div id="carrito-vacio" class="escondido">El carrito está vacío</div>
+        <div id="totales" class="escondido">
+            <p>Unidades totales: <span id="unidades">0</span></p>
+            <p>Precio total: $<span id="precio">0</span></p>
+        </div>
+        <button id="reiniciar">Vaciar Carrito</button>
+        <!--<section id="productos-container"></section>
         <section id="totales">
             <p>Total unidades: <span id="unidades">0</span></p>
             <p>Total precio: $ <span id="precio">0</span></p>
             <button disabled>Comprar</button>
             <button id="reiniciar">Reiniciar Carrito</button>
-        </section>
+        </section>--->
+        
     </main>
     <footer>
         <p></p>
